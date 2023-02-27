@@ -1,0 +1,45 @@
+@media (max-width: 800px) {
+
+#layout{
+  width: 100% !important;
+  height: inherit !important;
+}
+
+#layout > * {
+  display: none;
+}
+
+.left_area,
+.map_area{
+  display: block !important;
+  width: 100% !important;
+  /* position: relative !important; */
+  left: 0 !important;
+}
+
+.left_area {overflow: hidden;}
+#layout_divcontent1_divcontent6,
+#layout_divcontent1_text1,
+#layout_divcontent1_text3,
+.left_area #layout_divcontent1_group1,
+#layout_divcontent1_divcontent3,
+#layout_divcontent1_group2
+{width: 100% !important;left: 0 !important;}
+
+#layout_divcontent1_text4 > div,
+#layout_divcontent1_text12 > div,
+#layout_divcontent1_text15 > div,
+#layout_divcontent1_text5 > div,
+#layout_divcontent1_text19 > div,
+#layout_divcontent1_text6 > div
+{width: 33% !important;}
+#layout_divcontent1_group2 > *{width: 25% !important;}
+#layout_divcontent1_image2{left: 35% !important;}
+#layout_divcontent1_text7{left: 55% !important;}
+
+.map_area{
+  position: relative !important; 
+  top: 1090px !important;
+  overflow: hidden;
+}
+}

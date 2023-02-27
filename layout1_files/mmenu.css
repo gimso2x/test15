@@ -1,0 +1,120 @@
+ul.vbox_menu {
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	overflow : hidden;
+}
+ul.vbox_menu li {
+	list-style: none;
+	min-width:100px;
+	font-size:14px;
+	font-weight:bold;
+}
+ul.vbox_menu li li {
+	font-weight:normal;
+	min-width:200px;
+	border-bottom: 1px solid #efefef !important;
+	box-sizing:border-box;
+}
+/*메뉴 기본크기 및 배경*/
+ul.vbox_menu a {
+	display: block;
+	color:#2d2d2d;
+	background:transparent;
+	padding: 10px 20px;
+	box-sizing:border-box;
+}
+ul.vbox_menu a:hover,
+ul.vbox_menu a:hover {
+	color:#1d80e4;
+	background: #f4f4f4;
+}
+ul.vbox_menu a {
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+/*메뉴선택상태*/
+ul.vbox_menu li.menu-active > a {
+	background: #f4f4f4;
+}
+/*1레벨 메뉴오버*/
+ul.vbox_menu .level-1 li > a:hover {
+}
+ul.vbox_menu li > a:after {
+	position: absolute;
+	right: 8px;
+	font-weight: normal;
+}
+ul.vbox_menu li.menu-node > a:after {
+	position: absolute;
+	right: 8px;
+	font-weight: normal;
+}
+ul.vbox_menu li.menu-node.menu-open > a:after {
+	content: '';
+	width:16px;
+	height:16px;
+	background: url('images/menu-open.png') no-repeat left 50%;
+}
+ul.vbox_menu li.menu-node.menu-closed > a:after {
+	content: '';
+	background: url('images/menu-closed.png') no-repeat left 50%;
+	width:16px;
+	height:16px;
+}
+ul.vbox_menu li.menu-node > a {
+	position: relative;
+}
+/**************************vertical 수직 메뉴, 서브 수직펼침닫침**************************/
+ul.vbox_menu.menu-vertical .menu-level{
+}
+ul.vbox_menu.menu-vertical ul{
+	position: relative !important;
+}
+ul.vbox_menu.menu-vertical li {
+}
+/***********************horizontal 수평 메뉴, 서브 수직드롭다운****************************/
+/*드롭메뉴*/
+ul.vbox_menu.menu-horizontal .menu-level{
+}
+ul.vbox_menu.menu-horizontal ul{
+	position: absolute !important;
+}
+ul.vbox_menu.menu-horizontal li.menu-node > a {
+	padding: 15px 20px;
+	position: relative;
+}
+/*h.level1*/
+ul.vbox_menu.menu-horizontal > li {
+	display: inline-block;
+	text-align:center;
+}
+ul.vbox_menu.menu-horizontal > li li {
+	text-align:left;
+}
+ul.vbox_menu.menu-horizontal > li > ul {
+	display: block;
+	margin:0;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	padding:0;
+	background: #ffffff;
+}
+
+/* 수평1뎁스 오버이벤트 */
+ul.vbox_menu.menu-horizontal > li.menu-node > a:after {
+	background: transparent;
+}
+ul.vbox_menu.menu-horizontal > li > a {
+	display: block;
+}
+ul.vbox_menu.menu-horizontal > li > ul {
+	display: none !important;
+}
+ul.vbox_menu.menu-horizontal > li:hover > ul {
+	display: block !important;
+	height:auto !important;
+}
+/***************************************************/
