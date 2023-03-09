@@ -1,0 +1,16 @@
+.summary {
+  display: flex;
+  h3 {
+    flex: 1;
+  }
+  .buttonWrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+.detailArticle {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}

@@ -5,12 +5,15 @@ import Footer from "../Footer";
 
 import type { ReactNode } from "react";
 
+import styles from "./Layout.module.scss";
+
 const Layout = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
+
   return (
-    <div id="container">
+    <div id={styles.container}>
       {router.pathname === "/" ? <Header /> : <SubHeader />}
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       <Footer />
     </div>
   );
