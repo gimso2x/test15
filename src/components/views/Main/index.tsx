@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Main = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const Main = () => {
       <div>
         <label>주소 입력으로 간편하게 물건 체크</label>
         <input type="text" placeholder="주소를 입력해주세요." />
+        <Link href="/15">상세</Link>
       </div>
     </>
   );
